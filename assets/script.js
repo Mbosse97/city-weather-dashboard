@@ -21,7 +21,7 @@ formButton.addEventListener("click", function(event){
 
 // takes latitude and longitude from weather api
 var getcoords = function(cityname){
-    apiurl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityname}&appid=3c1902a6683a6fc1079fef0612f33630`
+    apiurl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityname}&appid=a9b4868a25a742d459f16afd1c7dc03b`
     fetch(apiurl)
     .then(function(response){
         return response.json()
@@ -38,7 +38,7 @@ var getcoords = function(cityname){
 
 
 var generateWeather = function(lat, lon){
-    apiurl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=3c1902a6683a6fc1079fef0612f33630&units=metric`
+    apiurl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=a9b4868a25a742d459f16afd1c7dc03b&units=metric`
     fetch(apiurl)
     .then(function(response){
         return response.json()
