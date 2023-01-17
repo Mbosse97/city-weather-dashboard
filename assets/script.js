@@ -10,13 +10,11 @@ var formButton = document.querySelector("#citysearchbutton")
 form.addEventListener("submit", function(event){
     event.preventDefault()
     getcoords(formInput.value)
-    generateHistory()
 })
 
 formButton.addEventListener("click", function(event){
     event.preventDefault()
     getcoords(formInput.value)
-    generateHistory()
 })
 
 // takes latitude and longitude from weather api
